@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,300&family=Lobster&family=Roboto&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #b0c4d7;
+            color: white;
+        }
+
+        .heading {
+            text-align: center;
+            color: #04112c;
+            font-size: 50px;
+            margin-top: 20px;
+            font-family: 'Asap Condensed';
+        }
+
+        .content {
+            width: 650px;
+            height: 770px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            background-color: #1b3358;
+            border-radius: 25px;
+            box-shadow: 0px 3px 32px 1px rgb(4, 11, 27);
+        }
+
+        form {
+
+
+
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-family: 'Asap Condensed';
+        }
+
+        .gg {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 21px;
+            font-family: 'Asap Condensed';
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #04112c;
+            outline: none;
+            font-size: 18px;
+            font-family: 'Asap Condensed';
+
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background-color: #04112c;
+            color: white;
+            font-size: 20px;
+            font-family: 'Asap Condensed';
+
+        }
+
+        .my-form {
+            width: 550px;
+            margin: 20px auto;
+            padding: 20px;
+
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        .my-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .my-form input[type="text"],
+        .my-form input[type="email"],
+        .my-form input[type="tel"],
+        .my-form textarea,
+        .my-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0px 2px 22px rgb(29, 29, 31);
+        }
+
+        .my-form input[type="radio"],
+        .my-form input[type="checkbox"] {
+            margin-right: 5px;
+            box-shadow: 0px 2px 22px black;
+        }
+
+        .my-form input[type="submit"],
+        .my-form input[type="reset"] {
+            padding: 10px 20px;
+            background: #4c5caf;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Survey Form</h1><br>
+    <div class="content">
+        <form class="my-form">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" value="Enter your first name" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" value="Enter your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="Enter your email" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" value="Enter your address" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">UK</option>
+                <option value="">Canada</option>
+                <option value="">UAE</option>
+                <!-- Include the list of countries as options -->
+            </select>
+
+            <div class="gg"> Gender :
+                <input type="radio" id="gender-male" name="gender" value="male" required>Male
+
+                <input type="radio" id="gender-female" name="gender" value="female" required>Female
+            </div>
+
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="about">Write about yourself:</label>
+            <textarea id="about" name="about"></textarea>
+
+            <input type="submit" value="Submit">
+            <br>
+            <input type="reset" value="Reset">
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
